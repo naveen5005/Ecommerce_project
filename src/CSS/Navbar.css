@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#searchbox{
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-left: 180px;
+    width: 300px;
+    height: 40px;
+    /* border-color: red;
+    border: 2px solid red; */
+}
+
+.navbar-nav li{
+  margin-left: 20px;
+    font-size: 18px;
+}
+#icon{
+    font-size: 20px;
+}
+.navbar-nav li:hover{
+    background-color: white;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+
+}
+.navbar-nav li a{
+    color:black;
+}
+@media screen  and (max-width:991px){
+    #searchbox{
+      margin: auto;
+    }
+    
+}
+
+
+
