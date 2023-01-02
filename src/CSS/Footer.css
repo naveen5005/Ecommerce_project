@@ -89,5 +89,10 @@ ul li {
         position: relative;
         bottom: 20%;
     }
-
+    .heading-1 ul,.heading-2 ul{
+        right: 5.5%;
+    }
+    .heading-3 ul{
+        left:3%;
+    }
 }
