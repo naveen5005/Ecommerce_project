@@ -1,5 +1,5 @@
 import React from "react";
-import "../BodySection/style.css";
+import "../CSS/carousel.css";
 
 const Carousel = () => {
   return (
