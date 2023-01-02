@@ -1,39 +1,63 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
 
-function NavBar() {
-    return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div className="container-fluid">
-                <a className="navbar-brand" href="#">React JS content</a>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <Link to={"/"} className="nav-link">Home</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to={"/materials"} className="nav-link">Materials</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to={"/contactUs"} className="nav-link">Contact Us</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to={"/aboutUs"} className="nav-link">About Us</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to={"/register"} className="nav-link">Register</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to={"/login"} className="nav-link">Login</Link>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    )
-}
+const Navbar = () => {
+  return (
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            Navbar
+          </a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Link
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link disabled"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                >
+                  Disabled
+                </a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  );
+};
 
-export default NavBar
+export default Navbar;
