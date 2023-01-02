@@ -1,0 +1,25 @@
+.wrapper{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.container div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:300px;
+    height: 100px;
+    border:2px solid black;
+    border-radius:20px;
+    background-color: chocolate;
+}
+.container div h1{
+    margin-bottom: 20px;
+}

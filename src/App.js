@@ -1,29 +1,37 @@
 import logo from './logo.svg';
 import './App.css';
-import NavBar from './Components/NavBar';
+import Login from './Components/usercomponents/login';
+import Registration from './Components/usercomponents/registration';
+import Navbar from './Components/usercomponents/navbar';
+import { Route, Routes, Link, BrowserRouter } from 'react-router-dom'
+import AdminDashboard from './Components/usercomponents/adminDashboard';
+import { RequiredAuth } from './Components/usercomponents/requirdAuth';
+import MyCurt from './Components/usercomponents/Mycurt';
+import Products from './Components/usercomponents/products';
+import Myaccount from './Components/usercomponents/Myaccount';
+import Statistics from './Components/usercomponents/statistics';
 import Footer from './Components/Footer';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HomePage from './Components/HomePage';
-import Materials from './Components/Materials';
-import ContactUs from './Components/ContactUs';
-import AboutUs from './Components/AboutUs';
-import Register from './Components/Register';
-import Login from './Components/Login';
+import { MyProvider } from './Components/usercomponents/Authcomponent';
+
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <NavBar />
-        <Routes>
-          <Route path='/' element={<HomePage/>} />
-          <Route path='/materials' element={<Materials/>}/>
-          <Route path='/contactUs' element={<ContactUs/>}/>
-          <Route path='/aboutUs' element={<AboutUs/>} />
-          <Route path='/register' element={<Register/>}/>
-          <Route path='/login' element={<Login/>}/>
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+    <BrowserRouter>
+    <MyProvider>
+    <Navbar/>
+    <Routes>
+      <Route path='/login' element={<Login/>}/>
+      <Route path='/registration' element={<Registration/>}/>
+      <Route path='/Dashboard' element={<RequiredAuth><AdminDashboard/></RequiredAuth>}>
+      <Route path='curt' element={<MyCurt/>}/>
+      <Route path='products' element={<Products/>}/>
+      <Route path='myaccount' element={<Myaccount/>}/>
+      <Route path='statistics' element={<Statistics/>}/>
+      </Route> 
+    </Routes>
+    </MyProvider>
+    <Footer/>
+    </BrowserRouter> 
     </div>
   );
 }
