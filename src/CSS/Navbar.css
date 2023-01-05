@@ -4,11 +4,13 @@
     box-sizing: border-box;
 }
 #searchbox{
-    padding-left: 20px;
+    margin-top: 10px;
+    width: 300px;
+    /* padding-left: 20px;
     margin-top: 10px;
     margin-left: 180px;
-    width: 22rem;
-    height: 40px;
+    width: 15rem;
+    height: 40px; */
    
 }
 

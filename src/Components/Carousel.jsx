@@ -3,6 +3,7 @@ import "../CSS/Carousel.css";
 
 const Carousel = () => {
   return (
+    // <div className="container-main">
     <div className="carousel">
       <div
         id="carouselExampleControls"
@@ -59,7 +60,7 @@ const Carousel = () => {
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <div class="deal">
+      {/* <div class="deal">
         <div className="image">
           <img src="./Media/tranding_img.jpeg" alt="" />
         </div>
@@ -68,8 +69,9 @@ const Carousel = () => {
           <p>sale get up to 50% off</p>
           <button className="btn btn-info">shop now</button>
         </div>
-      </div>
+      </div> */}
     </div>
+    // </div>
   );
 };
 
