@@ -10,15 +10,16 @@ import Women from './Components/Women';
 import Kids from './Components/Kids';
 import Homeliving from './Components/Home&living';
 import Beauty from './Components/Beauty';
+import Carousel from './Components/Carousel';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <NavBar/>
-        
+        <Carousel/>
         <Routes>
-        <Route path='/' element={<Home/>}/>
+        <Route index element={<Home/>}/>
         <Route path='/men' element={<Men/>}/>
         <Route path='/women' element={<Women/>}/>
         <Route path='/kids' element={<Kids/>}/>

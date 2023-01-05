@@ -32,12 +32,12 @@ const NavBar = () => {
         <li className="nav-item">
         <Link to={"/beauty"}  className="nav-link">Beauty</Link>
         </li>
-        <input type="text" id='searchbox' placeholder='search for products...' style={{borderRadius:30}} />
-        <li className="nav-item">
-          <a className="nav-link" href="#">Login</a>
+       <input type="text" id='searchbox' placeholder='search for products...' style={{borderRadius:30}} />
+        <li className="nav-item" style={{marginLeft:-50}} id="login">
+        <Link to={"/login"} className="nav-link" >Login</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Register</a>
+        <Link to={"/registration"} className="nav-link" >Register</Link>
         </li>
         <li className="nav-item" id='icon'>
         <FaShoppingCart/>
