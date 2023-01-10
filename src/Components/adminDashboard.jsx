@@ -16,11 +16,14 @@ const navigate=useNavigate()
     }
     const logout=()=>{
         setLoged(false)
+    
         // navigate("/login")
     }
     useEffect(()=>{
          getData()
     },[])
+  
+
   return (
     <div className='container d-flex my-5'>
       <div className='right border'>

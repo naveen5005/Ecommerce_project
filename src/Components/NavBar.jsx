@@ -88,7 +88,7 @@ const NavBar = () => {
                 </Link>
               </li>
               <li className="nav-item" id="icon">
-                <FaShoppingCart />
+              <Link to={"/cart"} className="nav-link"><FaShoppingCart /></Link>
               </li>
             </ul>
           </div>

@@ -19,6 +19,8 @@ import MyCurt from "./Components/Mycurt";
 import Products from "./Components/products";
 import Myaccount from "./Components/Myaccount";
 import Statistics from "./Components/statistics";
+import SingleProdut from "./Components/SingleProdut";
+import Cart from "./Components/Cart";
 
 function App() {
   return (
@@ -35,8 +37,10 @@ function App() {
             <Route path="/kids" element={<Kids />} />
             <Route path="/homeliving" element={<Homeliving />} />
             <Route path="/beauty" element={<Beauty />} />
+            <Route path ="/product/:id" element={<SingleProdut/>}/>
             <Route path="/login" element={<Login />} />
             <Route path="/registration" element={<Registration />} />
+            <Route path="/cart" element={<Cart/>}/>
             <Route
               path="/Dashboard"
               element={
