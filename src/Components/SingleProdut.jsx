@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import { json, useNavigate, useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import "../CSS/singleproduct.css"
 
 const SingleProdut = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
       getAllUsers();
-     
     }, []);
     const navigate=useNavigate();
     const  addtocart=()=>{
@@ -22,6 +21,9 @@ const SingleProdut = () => {
         
 
     }
+    const buynow=()=>{
+      
+    }
   
     const getAllUsers = async () => {
       let response = await (await fetch("http://localhost:5050/products/"+params.id)).json();
@@ -34,9 +36,8 @@ const SingleProdut = () => {
     <div className="single-container d-flex">
        <div className="leftside">
        <div className="image">
-          <img src={products.thumbnail}/>
+          <img src={products.thumbnail}alt="products"/ >
        </div>
-
        <div className="images">
        {products.images && products.images.map((image,i)=> <img src={image} key={i} /> )}
        
@@ -52,7 +53,7 @@ const SingleProdut = () => {
            <hr/>
            <p>description:SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...</p>
            <h1>899$</h1>
-           <button className='btn btn-success me-3' >buy now</button>
+           <button className='btn btn-success me-3' onClick={buynow} >buy now</button>
            <button className='btn btn-warning' onClick={addtocart}>add cart</button>
 
         </div>
