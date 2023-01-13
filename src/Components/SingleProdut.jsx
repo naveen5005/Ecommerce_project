@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import "../CSS/singleproduct.css"
-
+import { useDispatch,useSelector } from "react-redux";
+import { addItem, totalprice, totalquantity } from '../Store/cartSlice';
 const SingleProdut = () => {
     const [products, setProducts] = useState([]);
+    const dispatch = useDispatch();
     useEffect(() => {
       getAllUsers();
     }, []);
@@ -15,8 +17,10 @@ const SingleProdut = () => {
             headers:{
                 "Content-Type":"application/json"
             }
-
         })
+        dispatch(addItem(products));
+        dispatch(totalprice());
+        dispatch(totalquantity());
         navigate("/cart")
         
 

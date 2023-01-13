@@ -1,36 +1,39 @@
 import React, { useEffect, useState } from "react";
-
+import { useDispatch,useSelector } from "react-redux";
 const Cart = () => {
-  const [priceitems,setpriceitems]=useState([41,121,90])
+  const [priceitems, setpriceitems] = useState([41, 121, 90])
   const [products, setProducts] = useState([]);
-  
+  const allItems = useSelector((state)=>state.cartProduct.cartItems)
+  const totalPrice = useSelector((state)=>state.cartProduct.cartTotal)
+  const totalQuantity = useSelector((state)=>state.cartProduct.Quantity)
   useEffect(() => {
     getAllUsers();
-   
+
   }, []);
+
   const [result, setresult] = useState("");
-  const getAllUsers =() => {
-      fetch("http://localhost:5050/cart").then((res)=>{
+  const getAllUsers = () => {
+    fetch("http://localhost:5050/cart").then((res) => {
       return res.json();
-    }).then((response)=>{
+    }).then((response) => {
+      console.log(response)
       setProducts(response);
     })
     setTimeout(() => {
       console.log(myprice())
-          }, 10000);
-       
-  
-
+    }, 10000);
   };
-  const myprice=()=>{
-    var prices=[...priceitems]
-    products.map((price)=>{
-prices.push(price.price)
+  console.log(products)
 
-// console.log(prices)
+  const myprice = () => {
+    var prices = [...priceitems]
+    products.map((price) => {
+      prices.push(price.price)
+
+      console.log(prices)
 
 
-    } )
+    })
     setpriceitems(prices)
   }
 
@@ -41,6 +44,8 @@ prices.push(price.price)
       getAllUsers();
     });
   };
+  
+
   return (
     <div className="pricelist container">
       <div className="row">
@@ -51,17 +56,19 @@ prices.push(price.price)
                 <th>ProductImage</th>
                 <th>ProductName</th>
                 <th>ProductPrice</th>
+                <th>quantity</th>
                 <th>Delete</th>
               </tr>
             </thead>
             <tbody>
-              {products.map((carts, i) => (
+              {allItems.map((carts, i) => (
                 <tr key={i}>
                   <td>
                     <img src={carts.thumbnail} style={{ width: "150px" }} />
                   </td>
                   <td>{carts.title}</td>
                   <td>{carts.price}</td>
+                  <td>{carts.quantity}</td>
                   <td>
                     <button
                       type="button"
@@ -79,38 +86,31 @@ prices.push(price.price)
           </table>
         </div>
         <div className="col-1"></div>
-     
-        <div className="col-4 ">
-        <div className="border p-4">
-          <div class="card-header fs-3">Price Details</div>
-          <hr/>
-          <div class="card-body">
-            {/* <ul>
-              <li>Price items</li>
-              <li>Delivery Charges</li>
-              <li>Discount</li>
-              <li>Secured packaging Free</li>
-            </ul> */}
-            <p>PriceItems :*3items{" "}{" "}{" "}300$</p>
 
-            <p>Delivery Charges</p>
-            <p>Discount</p>
-            <p>Secured packaging Free</p>
+        <div className="col-4 ">
+          <div className="border p-4">
+            <div class="card-header fs-3">Price Details</div>
             <hr />
-            {priceitems && priceitems.map((pri,i)=> <h1>{pri}</h1>)}
+            <div class="card-body">
 
           
-            <h2>TotalAmount</h2>
-            <hr />
-            <div class="card-footer text-muted text-center">
-              <button className="btn btn-warning" onClick = {myprice}> PLaceOrder</button>
+              <p>PriceItems :*{totalQuantity} items - {totalPrice}</p>
+
+              <p>Delivery Charges - 10</p>
+              <p>Discount - 0%</p>
+              <p>Secured packaging Free - 10</p>
+              <hr />
+              <h2>TotalAmount : {totalPrice}</h2>
+              <hr />
+              <div class="card-footer text-muted text-center">
+                <button className="btn btn-warning" onClick={myprice}> PLaceOrder</button>
+              </div>
             </div>
           </div>
         </div>
-        </div>
       </div>
     </div>
-    
+
   );
 };
 

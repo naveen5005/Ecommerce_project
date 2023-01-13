@@ -1893,38 +1893,41 @@
   ],
   "cart": [
     {
-      "id": 26,
-      "title": "Plant Hanger For Home",
-      "description": "Boho Decor Plant Hanger For Home Wall Decoration Macrame Wall Hanging Shelf",
-      "price": 41,
-      "discountPercentage": 17.86,
-      "rating": 4.08,
-      "stock": 131,
-      "brand": "Boho Decor",
-      "category": "home-decoration",
-      "thumbnail": "https://i.dummyjson.com/data/products/26/thumbnail.jpg",
+      "id": 9,
+      "title": "Infinix INBOOK",
+      "description": "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty",
+      "price": 1099,
+      "discountPercentage": 11.83,
+      "rating": 4.54,
+      "stock": 96,
+      "brand": "Infinix",
+      "category": "laptops",
+      "thumbnail": "https://i.dummyjson.com/data/products/9/thumbnail.jpg",
       "images": [
-        "https://i.dummyjson.com/data/products/26/1.jpg",
-        "https://i.dummyjson.com/data/products/26/2.jpg",
-        "https://i.dummyjson.com/data/products/26/3.jpg",
-        "https://i.dummyjson.com/data/products/26/4.jpg",
-        "https://i.dummyjson.com/data/products/26/5.jpg",
-        "https://i.dummyjson.com/data/products/26/thumbnail.jpg"
+        "https://i.dummyjson.com/data/products/9/1.jpg",
+        "https://i.dummyjson.com/data/products/9/2.png",
+        "https://i.dummyjson.com/data/products/9/3.png",
+        "https://i.dummyjson.com/data/products/9/4.jpg",
+        "https://i.dummyjson.com/data/products/9/thumbnail.jpg"
       ]
     },
     {
-      "id": 3,
-      "title": "Samsung Universe 9",
-      "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
-      "price": 1249,
-      "discountPercentage": 15.46,
-      "rating": 4.09,
-      "stock": 36,
-      "brand": "Samsung",
-      "category": "smartphones",
-      "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+      "id": 27,
+      "title": "Flying Wooden Bird",
+      "description": "Package Include 6 Birds with Adhesive Tape Shape: 3D Shaped Wooden Birds Material: Wooden MDF, Laminated 3.5mm",
+      "price": 51,
+      "discountPercentage": 15.58,
+      "rating": 4.41,
+      "stock": 17,
+      "brand": "Flying Wooden",
+      "category": "home-decoration",
+      "thumbnail": "https://i.dummyjson.com/data/products/27/thumbnail.webp",
       "images": [
-        "https://i.dummyjson.com/data/products/3/1.jpg"
+        "https://i.dummyjson.com/data/products/27/1.jpg",
+        "https://i.dummyjson.com/data/products/27/2.jpg",
+        "https://i.dummyjson.com/data/products/27/3.jpg",
+        "https://i.dummyjson.com/data/products/27/4.jpg",
+        "https://i.dummyjson.com/data/products/27/thumbnail.webp"
       ]
     },
     {
@@ -1946,40 +1949,40 @@
       ]
     },
     {
-      "id": 12,
-      "title": "Brown Perfume",
-      "description": "Royal_Mirage Sport Brown Perfume for Men & Women - 120ml",
-      "price": 40,
-      "discountPercentage": 15.66,
-      "rating": 4,
-      "stock": 52,
-      "brand": "Royal_Mirage",
-      "category": "fragrances",
-      "thumbnail": "https://i.dummyjson.com/data/products/12/thumbnail.jpg",
+      "id": 82,
+      "title": "Kabir Singh Square Sunglass",
+      "description": "Orignal Metal Kabir Singh design 2020 Sunglasses Men Brand Designer Sun Glasses Kabir Singh Square Sunglass",
+      "price": 50,
+      "discountPercentage": 15.6,
+      "rating": 4.62,
+      "stock": 78,
+      "brand": "Designer Sun Glasses",
+      "category": "sunglasses",
+      "thumbnail": "https://i.dummyjson.com/data/products/82/thumbnail.jpg",
       "images": [
-        "https://i.dummyjson.com/data/products/12/1.jpg",
-        "https://i.dummyjson.com/data/products/12/2.jpg",
-        "https://i.dummyjson.com/data/products/12/3.png",
-        "https://i.dummyjson.com/data/products/12/4.jpg",
-        "https://i.dummyjson.com/data/products/12/thumbnail.jpg"
+        "https://i.dummyjson.com/data/products/82/1.jpg",
+        "https://i.dummyjson.com/data/products/82/2.webp",
+        "https://i.dummyjson.com/data/products/82/3.jpg",
+        "https://i.dummyjson.com/data/products/82/4.jpg",
+        "https://i.dummyjson.com/data/products/82/thumbnail.jpg"
       ]
     },
     {
-      "id": 51,
-      "title": "half sleeves T shirts",
-      "description": "Many store is creating new designs and trend every month and every year. Daraz.pk have a beautiful range of men fashion brands",
-      "price": 23,
-      "discountPercentage": 12.76,
-      "rating": 4.26,
-      "stock": 132,
-      "brand": "Vintage Apparel",
-      "category": "mens-shirts",
-      "thumbnail": "https://i.dummyjson.com/data/products/51/thumbnail.jpg",
+      "id": 32,
+      "title": "Sofa for Coffe Cafe",
+      "description": "Ratttan Outdoor furniture Set Waterproof  Rattan Sofa for Coffe Cafe",
+      "price": 50,
+      "discountPercentage": 15.59,
+      "rating": 4.74,
+      "stock": 30,
+      "brand": "Ratttan Outdoor",
+      "category": "furniture",
+      "thumbnail": "https://i.dummyjson.com/data/products/32/thumbnail.jpg",
       "images": [
-        "https://i.dummyjson.com/data/products/51/1.png",
-        "https://i.dummyjson.com/data/products/51/2.jpg",
-        "https://i.dummyjson.com/data/products/51/3.jpg",
-        "https://i.dummyjson.com/data/products/51/thumbnail.jpg"
+        "https://i.dummyjson.com/data/products/32/1.jpg",
+        "https://i.dummyjson.com/data/products/32/2.jpg",
+        "https://i.dummyjson.com/data/products/32/3.jpg",
+        "https://i.dummyjson.com/data/products/32/thumbnail.jpg"
       ]
     }
   ]
