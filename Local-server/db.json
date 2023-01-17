@@ -2017,6 +2017,23 @@
       "thumbnail": "https://i.dummyjson.com/data/products/79/thumbnail.jpg",
       "images": [
         "https://i.dummyjson.com/data/products/79/1.jpg"
+=======
+      "id": 6,
+      "title": "MacBook Pro",
+      "description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
+      "price": 1749,
+      "discountPercentage": 11.02,
+      "rating": 4.57,
+      "stock": 83,
+      "brand": "APPle",
+      "category": "laptops",
+      "thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png",
+      "images": [
+        "https://i.dummyjson.com/data/products/6/1.png",
+        "https://i.dummyjson.com/data/products/6/2.jpg",
+        "https://i.dummyjson.com/data/products/6/3.png",
+        "https://i.dummyjson.com/data/products/6/4.jpg"
+>>>>>>> 8ae7976ed332e649d50988ebbfe4034afa93fc23
       ]
     }
   ]
