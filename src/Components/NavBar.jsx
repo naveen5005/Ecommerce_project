@@ -1,11 +1,19 @@
 import React from "react";
 import "../CSS/Navbar.css";
-import { FaShoppingCart, FaUser } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { FaShoppingCart, FaUser,FaSearch } from "react-icons/fa";
+import { Link, useNavigate } from "react-router-dom";
 import { MyConsumer } from "./Authcomponent";
 
 const NavBar = () => {
-  const { user, loged } = MyConsumer();
+  const navigate=useNavigate()
+  const { user, loged,setSearch } = MyConsumer();
+  const handlechange=(e)=>{
+    setSearch(e.target.value)
+    
+  }
+  const handlesubmit=()=>{
+    navigate('/search')
+  }
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -32,8 +40,22 @@ const NavBar = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
+          <div className="collapse navbar-collapse d-lg-flex flex-column" id="navbarNav">
+          
+          <div className="ms-lg-auto searchbar">
+          <input
+                className=" form-control"
+                  type="text"
+                  id="searchbox"
+                  placeholder="search for products..."
+                  // style={{ borderRadius: 30 }}
+                  onChange={(e)=>{handlechange(e)}}
+                />
+                <div className="btn btn-primary btn-sm" onClick={handlesubmit}> <FaSearch /></div>
+               
+          </div>
+               
+            <ul className="navbar-nav ms-lg-auto">
               <li className="nav-item">
                 <Link to={"/"} className="nav-link active" aria-current="page">
                   {" "}
@@ -65,14 +87,7 @@ const NavBar = () => {
                   Beauty
                 </Link>
               </li>
-              <li>
-                <input
-                  type="text"
-                  id="searchbox"
-                  placeholder="    search for products..."
-                  style={{ borderRadius: 30 }}
-                />
-              </li>
+             
               {!loged ? (
                 <li className="nav-item">
                   <Link to="/login" className="nav-link active">
@@ -80,8 +95,10 @@ const NavBar = () => {
                   </Link>
                 </li>
               ) : (
-                <li className="nav-link active">{user.id}</li>
-              )}
+                <li className="nav-item">
+                <Link to="/Dashboard" className="nav-link active">
+                <FaUser/>{user.id}
+                  </Link></li>)}
               <li className="nav-item">
                 <Link to={"/registration"} className="nav-link">
                   Register

@@ -21,6 +21,7 @@ import Myaccount from "./Components/Myaccount";
 import Statistics from "./Components/statistics";
 import SingleProdut from "./Components/SingleProdut";
 import Cart from "./Components/Cart";
+import Search from "./Components/search";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/registration" element={<Registration />} />
             <Route path="/cart" element={<Cart/>}/>
+            <Route  path="/search" element={<Search/>} />
             <Route
               path="/Dashboard"
               element={

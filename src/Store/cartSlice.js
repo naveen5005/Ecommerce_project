@@ -11,6 +11,7 @@ export const cartSlice=createSlice({
     initialState:defaultstate,
     reducers:{
         addItem:(state,  action)=>{
+            console.log(state)
             const existItem=state.cartItems.find((item)=> item.id === action.payload.id)
             if(existItem){
                 state.cartItems.forEach((item,i) =>{

@@ -1,4 +1,36 @@
-#footer-section {
+.headings{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3%;
+    flex-wrap: wrap;
+}
+
+
+#footer-section{
+    background-color: rgb(58, 43, 61);
+}
+h3 {
+    color: whitesmoke;
+    text-decoration: underline;
+    padding-bottom: 10%;
+}
+.top-heading ul{
+    position: relative;
+    left: -20%;
+}
+ul li {
+    list-style: none;
+    color: lightgray;
+    line-height: 2rem;
+}
+.heading-4 p {
+    color: lightgray;
+    text-align: left;
+    position: relative;
+    bottom: 10%;
+}
+
+/* #footer-section {
     position: relative;
     bottom: 0px;
     width: 100%;
@@ -90,4 +122,4 @@ ul li {
         bottom: 20%;
     }
 
-}
+} */

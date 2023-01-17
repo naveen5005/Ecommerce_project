@@ -5,6 +5,7 @@ import { useContext ,useState} from "react";
 const MyContext = createContext()
 
 export const MyProvider = ({children})=>{
+    const [search,setSearch]=useState("")
     const [user, setUser] = useState({
         id: "",
         password: "",
@@ -21,7 +22,7 @@ export const MyProvider = ({children})=>{
         getData()
     }, [user]);
     
-    return <MyContext.Provider value={{user,setUser,loged,setLoged,userData,type, setType}}>
+    return <MyContext.Provider value={{user,setUser,loged,setLoged,userData,type, setType,search,setSearch}}>
         {children}
     </MyContext.Provider>
 }

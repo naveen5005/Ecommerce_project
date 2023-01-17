@@ -3,9 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-#searchbox{
+.searchbar{
+    display: flex;
     margin-top: 10px;
     width: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
     /* padding-left: 20px;
     margin-top: 10px;
     margin-left: 180px;
@@ -13,6 +16,7 @@
     height: 40px; */
    
 }
+
 
 .navbar-nav li{
   margin-left: 20px;
@@ -31,14 +35,23 @@
 } */
 .navbar-nav li a{
     color:black;
+    padding: 5px 10px!important;
+    border-radius: 5px;
+
+}
+.navbar-nav li a:hover{
+    background-color:aqua;
+    color: black;
+
 }
 @media screen  and (max-width:991px){
     .navbar-nav li{
-        position: relative;
+        /* position: relative;
         left: 50%;
-        right: 50%;
+        right: 50%; */
+        margin: auto;
     }
-    #searchbox{
+    .searchbar{
       margin: auto;
     }
     /* #login{
