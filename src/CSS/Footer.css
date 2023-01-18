@@ -8,6 +8,10 @@
 
 #footer-section{
     background-color: rgb(58, 43, 61);
+    margin-top: 2%;
+    /* position: absolute;
+    bottom: 0px;
+    width: 100%; */
 }
 h3 {
     color: whitesmoke;

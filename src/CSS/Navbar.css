@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+.main-navbar{
+    margin-bottom: 2%;
+}
 .searchbar{
     display: flex;
     margin-top: 10px;
@@ -40,8 +43,8 @@
 
 }
 .navbar-nav li a:hover{
-    background-color:aqua;
-    color: black;
+    background-color:darkgray;
+    color: whitesmoke;
 
 }
 @media screen  and (max-width:991px){

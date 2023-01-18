@@ -22,6 +22,7 @@ import Statistics from "./Components/statistics";
 import SingleProdut from "./Components/SingleProdut";
 import Cart from "./Components/Cart";
 import Search from "./Components/search";
+import PlaceOrder from "./Components/PlaceOrder";
 
 function App() {
   return (
@@ -56,6 +57,7 @@ function App() {
               <Route path="myaccount" element={<Myaccount />} />
               <Route path="statistics" element={<Statistics />} />
             </Route>
+            <Route path="/PlaceOrder" element={<PlaceOrder/>}/>
           </Routes>
         </MyProvider>
         <Footer />

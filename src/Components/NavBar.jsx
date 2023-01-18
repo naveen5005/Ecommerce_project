@@ -15,7 +15,7 @@ const NavBar = () => {
     navigate('/search')
   }
   return (
-    <div>
+    <div className="main-navbar">
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
           <img
@@ -69,7 +69,7 @@ const NavBar = () => {
               </li>
               <li className="nav-item">
                 <Link to={"/women"} className="nav-link">
-                  WoMen
+                  Women
                 </Link>
               </li>
               <li className="nav-item">

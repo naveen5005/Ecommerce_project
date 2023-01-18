@@ -44,7 +44,7 @@ const navigate=useNavigate()
             <li onClick={logout}>Log out</li>
         </ul>):(<ul className='menu'>
             <li><Link to="/Dashboard/myaccount" className='nav-link'>My Account</Link></li>
-            <li><Link to="/Dashboard/curt" className='nav-link'>Mycurt</Link></li>
+            <li><Link to="/Dashboard/curt" className='nav-link'>Mycart</Link></li>
             <li onClick={logout}>Log out</li>
         </ul>)}
         

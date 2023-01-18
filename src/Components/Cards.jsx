@@ -122,9 +122,3 @@ const Cards = () => {
 
 export default Cards;
 
-{
-  /* <div className="price rating details">
-                                <div className="price-details">Price : {data.price}</div>
-                                <div className="rating-details">Rating : {data.rating}</div>
-                            </div> */
-}
