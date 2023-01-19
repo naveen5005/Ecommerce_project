@@ -1,4 +1,4 @@
-#carouselExampleInterval {
+ #carouselExampleInterval {
   height: 30%;
   display: flex;
 }
@@ -6,9 +6,10 @@
   width: 100vw;
   /* height: 50vh; */
   display: flex;
-  align-items: center;
+  align-items: center; 
 }
 .carousel {
+  
   padding: 0;
   padding-top: 0px;
 }
@@ -16,7 +17,7 @@
   width: 100vw;
   height: 60vh;
   align-items: center;
-}
+} 
 
 /* 
 
@@ -74,3 +75,7 @@
     color: #666;
     font-size: 2rem; 
   }   */
+
+
+
+ 

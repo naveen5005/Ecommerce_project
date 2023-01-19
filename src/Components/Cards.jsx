@@ -16,7 +16,7 @@ const Cards = () => {
   };
   return (
     <div>
-      <h2>Top Sellings</h2>
+      <h2 className="heading">Top Sellings</h2>
       <div className="main-cards">
         {products.map((data, i) => {
           if (i <= 5) {
@@ -40,7 +40,7 @@ const Cards = () => {
         })}
       </div>
       <div>
-        <h2>the Second Categery</h2>
+        <h2 className="heading">the Second Categery</h2>
         <div className="main-cards">
           {products.map((data, i) => {
             if (i > 5 && i <= 11) {
@@ -65,7 +65,7 @@ const Cards = () => {
         </div>
       </div>
       <div>
-        <h2>the third Categery</h2>
+        <h2 className="heading">the third Categery</h2>
         <div className="main-cards">
           {products.map((data, i) => {
             if (i > 11 && i <= 17) {
@@ -91,7 +91,7 @@ const Cards = () => {
       </div>
 
       <div>
-        <h2>the Fourth Categery</h2>
+        <h2 className="heading">the Fourth Categery</h2>
 
         <div className="main-cards">
           {products.map((data, i) => {

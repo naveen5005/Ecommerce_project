@@ -1,9 +1,9 @@
 import React from "react";
+
 import "../CSS/Carousel.css";
 
 const Carousel = () => {
   return (
-    // <div className="container-main">
     <div className="carousel">
       <div
         id="carouselExampleControls"
@@ -14,7 +14,11 @@ const Carousel = () => {
           <div className="carousel-item active">
             <a href="">
               {" "}
-              <img src="./Media/banner1.jpeg" className="d-block" alt="banner1" />
+              <img
+                src="./Media/banner1.jpeg"
+                className="d-block"
+                alt="banner1"
+              />
             </a>
           </div>
           <div className="carousel-item">
@@ -60,7 +64,14 @@ const Carousel = () => {
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      {/* <div class="deal">
+    </div>
+  );
+};
+
+export default Carousel;
+
+{
+  /* <div class="deal">
         <div className="image">
           <img src="./Media/tranding_img.jpeg" alt="" />
         </div>
@@ -69,10 +80,5 @@ const Carousel = () => {
           <p>sale get up to 50% off</p>
           <button className="btn btn-info">shop now</button>
         </div>
-      </div> */}
-    </div>
-    // </div>
-  );
-};
-
-export default Carousel;
+      </div> */
+}
